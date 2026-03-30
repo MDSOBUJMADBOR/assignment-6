@@ -19,40 +19,46 @@ setCarts(filteredArray);
 
 
 return (
- <div className=" p-10 max-w-6xl mx-auto">
+ <div className=" p-6 max-w-6xl mx-auto border border-gray-300 rounded-xl mb-8">
       <h1 className="text-2xl font-bold">Your Cart</h1>
 
       {carts.length === 0 ? (
         <p className="text-center text-2xl p-5">Cart is empty</p>
       ) : (
         <>
+
+
           <div className="space-y-5 mt-4">
             {carts.map((item) => (
               <div
-                className="flex items-center justify-between border rounded-lg p-3"
+                className="flex items-center justify-between  rounded-lg p-3 bg-[#F9FAFC]"
                 key={item.id}
               >
                 <div className="flex  items-center gap-2">
-                  <div>
+                  <div className='bg-transparent'>
                     <img
-                      className="h-20 w-20 object-contain"
+                      className="h-20 w-20 object-contain border border-gray-400 rounded-full p-2 "
                       src={item.image}
                     />
                   </div>
 
                   <div>
                     <h2 className="text-xl font-bold">{item.name}</h2>
+                     <div className='flex '>
+                    <p>${item.price}</p>
+                    <p>/{item.period}</p>
+                     </div>
                   </div>
                 </div>
 
-                <div className="flex gap-10">
-                  <div className="text-3xl font-bold">${item.price}/month</div>
 
-                  <button
+
+                <div className="flex gap-10">
+                    <button
                     onClick={() => handleDelete(item)}
-                    className=" btn rounded-full btn-error"
+                    className=" btn text-red-500"
                   >
-                    X
+                    Remove
                   </button>
                 </div>
                 
@@ -60,14 +66,16 @@ return (
             ))}
           </div>
 
-          <div className=" flex justify-between bg-black text-white p-5 mt-5 rounded-lg text-3xl font-bold">
+
+
+          <div className=" flex justify-between  p-5 mt-5 rounded-lg text-3xl font-bold">
             <div>Total</div>
             <div>$ {totalPrice}</div>
           </div>
 
           <button
             onClick={handlePayment}
-            className="btn w-full mt-5 bg-red-500 text-white text-2xl  rounded-lg"
+            className="btn btn-primary w-full mt-5  text-white text-xl  rounded-full"
           >
             Proceed to Checkout
           </button>

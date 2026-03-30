@@ -7,7 +7,7 @@ const models = use(modelPromise);
           
 
           return (
-                    <div className='grid grid-cols-3 gap-5 max-w-6xl mx-auto'>
+                    <div className='grid grid-cols-3 gap-5 max-w-6xl mx-auto mb-20'>
 {
           models.map(model => <ModelCard key={model.id} model={model} carts={carts} setCarts={setCarts}></ModelCard>)
           

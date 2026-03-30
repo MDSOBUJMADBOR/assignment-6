@@ -7,6 +7,7 @@ import Premium from './component/Banner/Premium'
 import Models from './component/Models'
 import Navbar from './component/Navbar/Navbar'
 import Cart from './component/Navbar/Cart'
+import GetStarted from './component/Get Started/GetStarted'
 
 
 const getModels = async () => {
@@ -22,7 +23,7 @@ const [carts, setCarts] = useState([])
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar carts={carts}></Navbar>
    <BanNer></BanNer>
    <Active></Active>
    <Premium></Premium>
@@ -38,14 +39,15 @@ const [carts, setCarts] = useState([])
   <input type="radio"
    name="my_tabs_1"
     className="tab rounded-full w-40 text-xl font-semibold" 
+    aria-label={`Cart (${carts.length})`}
     onClick={() => setActiveTab("cart")}
-    aria-label="Cart"
       />
 </div>
 
 {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
 {activeTab === "cart" &&  <Cart carts={carts} setCarts={setCarts}></Cart>}
-    
+
+  <GetStarted></GetStarted> 
 
    
 

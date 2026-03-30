@@ -12,7 +12,7 @@ setCarts([...carts, model]);
 //  console.log(model);
 
           return (
-                    <div className='border border-red-500 rounded-xl p-5 space-y-4'>
+                    <div className='border border-red-500 rounded-xl p-5 space-y-4 '>
 
 <div className='flex justify-between items-center '>
           <img className='border border-gray-400 rounded-full p-2' src={model.image} alt="" />
