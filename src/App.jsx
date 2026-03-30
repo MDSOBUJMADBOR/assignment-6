@@ -1,10 +1,12 @@
 
+import { useState } from 'react'
 import './App.css'
 import Active from './component/Banner/Active'
 import BanNer from './component/Banner/BanNer'
 import Premium from './component/Banner/Premium'
 import Models from './component/Models'
 import Navbar from './component/Navbar/Navbar'
+import Cart from './component/Navbar/Cart'
 
 
 const getModels = async () => {
@@ -15,7 +17,8 @@ const getModels = async () => {
 const modelPromise = getModels();
 
 function App() {
- 
+ const [activeTab,setActiveTab] = useState("model");
+const [carts, setCarts] = useState([])
 
   return (
     <>
@@ -23,7 +26,28 @@ function App() {
    <BanNer></BanNer>
    <Active></Active>
    <Premium></Premium>
-    <Models modelPromise={modelPromise}></Models>
+
+{/* name of each tab group should be unique */}
+<div className="tabs tabs-box justify-center bg-transparent mb-5">
+  <input type="radio"
+   name="my_tabs_1" 
+   className="tab rounded-full w-40 text-xl font-semibold" 
+   aria-label="model" 
+   onClick={() => setActiveTab("model")}
+   defaultChecked/>
+  <input type="radio"
+   name="my_tabs_1"
+    className="tab rounded-full w-40 text-xl font-semibold" 
+    onClick={() => setActiveTab("cart")}
+    aria-label="Cart"
+      />
+</div>
+
+{activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
+{activeTab === "cart" &&  <Cart carts={carts} setCarts={setCarts}></Cart>}
+    
+
+   
 
 </>
    

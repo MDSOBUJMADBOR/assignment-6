@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-const ModelCard = ({model}) => {
+const ModelCard = ({model,carts,setCarts}) => {
+const [isBuy,setIsBuy] = useState(false)
+// console.log(carts);
+const handleSubsScription = () => {
+setIsBuy(true);
 
- console.log(model);
+setCarts([...carts, model]);
+}
+//  console.log(model);
 
           return (
                     <div className='border border-red-500 rounded-xl p-5 space-y-4'>
@@ -30,7 +36,7 @@ model.features.map((feature,index) => (
 <div>
           
 </div>
-<button className='btn w-full rounded-3xl bg-linear-to-r from-cyan-500 to-blue-500'>{model.button}</button>
+<button onClick={handleSubsScription} className='btn w-full rounded-3xl bg-linear-to-r from-cyan-500 to-blue-500 text-white'>{isBuy ? "Buy" : "Buy Now"}</button>
                               
                     </div>
           );
