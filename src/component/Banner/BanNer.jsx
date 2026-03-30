@@ -7,10 +7,11 @@ const BanNer = () => {
           return (
 
                          
-<div className="max-w-6xl mx-auto flex items-center my-10">
-      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+<div className="max-w-6xl mx-auto my-12">
+      <div className="flex flex-wrap justify-center items-center gap-2">
               {/* Left Content */}
-             <div className="space-y-6">
+                                        <div className='space-y-4'>
+                                                
                                         <div className="inline-flex items-center gap-2 bg-[#e1e7ff]  text-[#6130f7] text-sm        font-medium px-5 py-2 rounded-full">
                                         <img src={GradientImage} alt="" />
                                         New: AI-Powered Tools Available
@@ -18,13 +19,7 @@ const BanNer = () => {
 
                                          <h1 className='text-5xl font-bold'>Supercharge Your  <br /> Digital Workflow </h1>
 
-                                        {/* <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-red-600">
-                                        One Subscription.
-                                        <br />
-                                        <span className="bg-linear-to-r from-red-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-                                        All the AIs You Need
-                                        </span>
-                                                  </h1> */}
+                                       
 
                                         <p className="text-lg text-[#627382] max-w-lg">
                                         Access premium AI toolsv, design assets, templates, and productivity software—all in one place. Start creating faster today.
@@ -44,15 +39,16 @@ const BanNer = () => {
                                         
                                         </button>
                                         </div>
-                   
+                     
+                                        </div>
         
 
           
-            </div>
+           
 
                        {/* Right Image */}
-                    <div className="relative flex justify-center lg:justify-end">
-                              <div className="relative">
+                    <div className=" flex justify-center lg:justify-end">
+                              <div >
                               <img src={BanNerImage} alt="" />
                               </div>
                     </div>
