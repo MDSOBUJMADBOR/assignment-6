@@ -8,6 +8,7 @@ import Models from './component/Models'
 import Navbar from './component/Navbar/Navbar'
 import Cart from './component/Navbar/Cart'
 import GetStarted from './component/Get Started/GetStarted'
+import Simple from './component/Simple/Simple'
 
 
 const getModels = async () => {
@@ -48,7 +49,7 @@ const [carts, setCarts] = useState([])
 {activeTab === "cart" &&  <Cart carts={carts} setCarts={setCarts}></Cart>}
 
   <GetStarted></GetStarted> 
-
+<Simple></Simple>
    
 
 </>

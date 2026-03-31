@@ -34,7 +34,7 @@ const GetStarted = () => {
                                                   </div>
                                                   <h2 className='flex justify-center text-xl font-semibold'>Choose Products</h2>
                                                   <p className='text-center text-[#627382FF]'>Browse our catalog and select the tools
- <br /> that fit your needs.</p>
+                                                  <br /> that fit your needs.</p>
                                         
                                                  
                                         </div>
@@ -46,7 +46,7 @@ const GetStarted = () => {
                                                   </div>
                                                   <h2 className='flex justify-center text-xl font-semibold'>Start Creating</h2>
                                                   <p className='text-center text-[#627382FF]'>Download and start using your premium  <br />
-tools immediately.</p>
+                                                       tools immediately.</p>
                                         
                                                  
                                         </div>
