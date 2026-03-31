@@ -28,16 +28,16 @@ const BanNer = () => {
 
 
                                         <div className="flex flex-wrap gap-4 pt-4">
-                                        <button className=" bg-linear-65 from-purple-500 to-[#a06bce]  px-8 py-4 rounded-full font-semibold text-lg  flex items-center gap-3  text-white">
-                                        Explore Products
+                                                <button className="btn bg-linear-to-r from-[#2106f0] to-[#8706ea]  px-8 py-7 rounded-full font-semibold text-lg  flex items-center gap-3  text-white">
+                                                    Explore Products
                                         
-                                        </button>
+                                                </button>
 
-                    <button className="border border-black text-[#6130f7]  px-7 rounded-full font-semibold   flex items-center gap-3  hover:bg-linear-65 from-purple-500 to-[#a06bce] hover:text-white ">
-                              <img src={PlayImage} alt="" />
-                                     Watch Demo
+                                                 <button className="btn border-2 border-purple-500 bg-transparent hover:bg-linear-to-r hover:from-purple-500 to-pink-500 transition duration-1200  px-8 py-7 rounded-full font-semibold   flex items-center gap-3  hover:text-white ">
+                                                  <img src={PlayImage} alt="" />
+                                                  Watch Demo
                                         
-                                        </button>
+                                                    </button>
                                         </div>
                      
                                         </div>

@@ -3,26 +3,26 @@ import React from 'react';
 const Simple = () => {
           return (
 
-<div className='my-7'>
+<div className='my-13'>
 
 
 <div className='text-center space-y-3'>
           <h2 className='text-2xl font-bold '>Simple, Transparent Pricing</h2>
-          <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+          <p className='text-gray-400'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 </div>
 
 
 
 <div className='relative max-w-6xl mx-auto'>
 
-<span className="left-130 top-12 bg-amber-100 text-xs border-none  badge badge-xs badge-warning p-4 absolute z-5 rounded-full">Most Popular</span>
+<span className="left-130 top-2 font-bold bg-amber-100 text-xs border-none  badge badge-xs badge-warning p-4 absolute z-5 rounded-full">Most Popular</span>
 
 <br />
 
-     <div className='my-10 max-w-5xl mx-auto grid grid-cols-3 gap-2 '>
+     <div className='my-0 max-w-5xl mx-auto grid grid-cols-3 gap-2 '>
 
 
-<div className="card w-80 bg-base-100 shadow-sm">
+<div className="card w-80 bg-[#f9fafc] shadow-sm">
   <div className="card-body">
     
     <div className="space-y-2">
@@ -54,19 +54,14 @@ const Simple = () => {
             
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block rounded-full">Get Started Free</button>
+      <button className="btn text-white bg-linear-to-r from-[#2106f0] to-[#8706ea] btn-block rounded-full">Get Started Free</button>
     </div>
   </div>
 </div>
 
 
 
-
-
-<div >
-
-
-<div className="card w-80  shadow-sm bg-[#6130f7] text-white">
+<div className="card w-80  shadow-sm bg-linear-to-r from-[#2106f0] to-[#8706ea] text-white">
   <div className="card-body">
     
     <div className="space-y-2">
@@ -110,12 +105,8 @@ const Simple = () => {
   </div>
 </div>
 
-</div>
 
-
-
-
-<div className="card w-80 bg-base-100 shadow-sm">
+<div className="card w-80 bg-[#f9fafc] shadow-sm">
   <div className="card-body">
     
     <div className="space-y-2">
@@ -154,7 +145,7 @@ const Simple = () => {
             
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block rounded-full">Get Started Free</button>
+      <button className="btn text-white bg-linear-to-r from-[#2106f0] to-[#8706ea] btn-block rounded-full">Get Started Free</button>
     </div>
   </div>
 </div>

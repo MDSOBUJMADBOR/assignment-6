@@ -9,6 +9,8 @@ import Navbar from './component/Navbar/Navbar'
 import Cart from './component/Navbar/Cart'
 import GetStarted from './component/Get Started/GetStarted'
 import Simple from './component/Simple/Simple'
+import Footer from './component/Simple/Footer'
+import { ToastContainer } from 'react-toastify'
 
 
 const getModels = async () => {
@@ -30,19 +32,25 @@ const [carts, setCarts] = useState([])
    <Premium></Premium>
 
 {/* name of each tab group should be unique */}
-<div className="tabs tabs-box justify-center bg-transparent mb-5">
-  <input type="radio"
+<div className="tabs tabs-box justify-center   bg-white mb-5">
+  <div className='border border-gray-300 rounded-3xl'>
+    <input type="radio"
    name="my_tabs_1" 
-   className="tab rounded-full w-40 text-xl font-semibold" 
-   aria-label="model" 
+   aria-label="Products" 
    onClick={() => setActiveTab("model")}
-   defaultChecked/>
+className={`tab rounded-full w-30 text-xl font-semibold
+    ${activeTab === "model"
+      ? "text-white bg-linear-to-r from-[#2106f0] to-[#8706ea]"
+      : "bg-gray-0 text-black"}`}   defaultChecked/>
   <input type="radio"
    name="my_tabs_1"
-    className="tab rounded-full w-40 text-xl font-semibold" 
-    aria-label={`Cart (${carts.length})`}
-    onClick={() => setActiveTab("cart")}
-      />
+   aria-label={`Cart (${carts.length})`}
+   onClick={() => setActiveTab("cart")}
+className={`tab rounded-full w-30 text-xl font-semibold
+    ${activeTab === "cart"
+      ? "text-white bg-linear-to-r from-[#2106f0] to-[#8706ea]"
+      : "bg-gray-0 text-black"}`}      />
+  </div>
 </div>
 
 {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
@@ -50,7 +58,9 @@ const [carts, setCarts] = useState([])
 
   <GetStarted></GetStarted> 
 <Simple></Simple>
-   
+  <Footer></Footer>
+
+   <ToastContainer/>
 
 </>
    

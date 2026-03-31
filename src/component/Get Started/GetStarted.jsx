@@ -5,7 +5,7 @@ import Icon3 from '../../assets/rocket.png'
 
 const GetStarted = () => {
           return (
-                    <div className='bg-[rgb(230,236,239)] py-15 space-y-5'>
+                    <div className='bg-gray-100 py-15 space-y-5'>
                               
                               <div className='text-center space-y-2'>
                               <h2 className='text-3xl font-bold'>Get Started in 3 Steps</h2>
