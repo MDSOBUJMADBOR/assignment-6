@@ -7,10 +7,10 @@ import React, { useState } from 'react';
 
 const navLinks = [
   { id: 1, name: "Products",     path: "/" },
-  { id: 2, name: "Features",    path: "/about" },
-  { id: 3, name: "Pricing", path: "/services" },
-  { id: 4, name: "Testimonials",  path: "/pricing" },
-  { id: 5, name: "FAQ",  path: "/contact" },
+  { id: 2, name: "Features",    path: "/" },
+  { id: 3, name: "Pricing", path: "/" },
+  { id: 4, name: "Testimonials",  path: "/" },
+  { id: 5, name: "FAQ",  path: "/" },
 ];
 
 const Navbar = ({carts}) => {

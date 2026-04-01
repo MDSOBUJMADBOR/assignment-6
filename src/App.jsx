@@ -1,18 +1,17 @@
 
 import { useState } from 'react'
 import './App.css'
+import NavBar2 from './component/NavBar2/NavBar2'
 import Active from './component/Banner/Active'
 import BanNer from './component/Banner/BanNer'
 import Premium from './component/Banner/Premium'
 import Models from './component/Models'
-import Navbar from './component/Navbar/Navbar'
-import Cart from './component/Navbar/Cart'
+import Cart from './component/Cart/Cart'
 import GetStarted from './component/Get Started/GetStarted'
 import Simple from './component/Simple/Simple'
 import Footer from './component/Simple/Footer'
 import { ToastContainer } from 'react-toastify'
 import Ready from './component/Simple/Ready'
-import NavBar2 from './component/NavBar2/NavBar2'
 
 
 const getModels = async () => {
@@ -29,7 +28,7 @@ const [carts, setCarts] = useState([])
   return (
     <>
     <NavBar2 carts={carts}></NavBar2>
-    {/* <Navbar carts={carts}></Navbar> */}
+  
    <BanNer></BanNer>
    <Active></Active>
    <Premium></Premium>

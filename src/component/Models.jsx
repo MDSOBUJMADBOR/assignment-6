@@ -1,5 +1,5 @@
 import React, { use } from 'react';
-import ModelCard from './Navbar/ModelCard';
+import ModelCard from './Cart/ModelCard';
 
 const Models = ({modelPromise,carts,setCarts}) => {
 
