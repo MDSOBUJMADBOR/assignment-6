@@ -35,22 +35,22 @@ const Footer = () => {
             <ul className="space-y-4 text-zinc-400">
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Models
+                Features
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Pricing
+                 Pricing
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Features
+                 Templates
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  API
+                Integrations
                 </a>
               </li>
             </ul>
@@ -76,33 +76,33 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Contact
+                Press
                 </a>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="text-white font-semibold mb-6 text-lg">Legal</h3>
+            <h3 className="text-white font-semibold mb-6 text-lg">Resources</h3>
             <ul className="space-y-4 text-zinc-400">
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Privacy Policy
+                 Documentation
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Terms of Service
+                  Help Center
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Cookie Settings
+                  Community
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition">
-                  Cookie Settings
+                  Contact
                 </a>
               </li>
             </ul>
@@ -111,9 +111,9 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-6 text-lg">Social Links</h3>
             <div>
                     <ul className='flex gap-2 items-center'>
-                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white' href=""><FontAwesomeIcon icon={faFacebook} className='' /></a></li>
-                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white' href=""><FontAwesomeIcon icon={faGithub} className='' /></a></li>
-                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white' href=""><FontAwesomeIcon icon={faInstagram} className='' /></a></li>
+                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white hover:bg-gray-400' href=""><FontAwesomeIcon icon={faFacebook} className='' /></a></li>
+                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white hover:bg-gray-400' href=""><FontAwesomeIcon icon={faGithub} className='' /></a></li>
+                              <li ><a className='h-12 w-12 rounded-full p-2 bg-white hover:bg-gray-400' href=""><FontAwesomeIcon icon={faInstagram} className='' /></a></li>
                              
                     </ul>
             </div>

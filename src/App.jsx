@@ -11,6 +11,7 @@ import GetStarted from './component/Get Started/GetStarted'
 import Simple from './component/Simple/Simple'
 import Footer from './component/Simple/Footer'
 import { ToastContainer } from 'react-toastify'
+import Ready from './component/Simple/Ready'
 
 
 const getModels = async () => {
@@ -58,6 +59,7 @@ className={`tab rounded-full w-30 text-xl font-semibold
 
   <GetStarted></GetStarted> 
 <Simple></Simple>
+<Ready></Ready>
   <Footer></Footer>
 
    <ToastContainer/>
