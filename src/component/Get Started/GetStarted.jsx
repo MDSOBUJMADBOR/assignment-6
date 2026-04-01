@@ -15,7 +15,7 @@ const GetStarted = () => {
 
                          <div className='grid grid-cols-3 gap-5 max-w-6xl mx-auto'>
                                       
-                                        <div className=' bg-white rounded-lg p-5 space-y-4'>
+                                        <div className=' bg-white rounded-lg p-5 space-y-4 transition duration-500 hover:scale-105 hover:border-gray-500'>
                                                   <p className='flex justify-end  '><span className='bg-[#6130f7] text-white p-1 rounded-full'>01</span></p>
                                                  
                                                   <div className='flex justify-center'>
@@ -26,7 +26,7 @@ const GetStarted = () => {
                                         
                                                  
                                         </div>
-                                        <div className=' bg-white rounded-lg p-5 space-y-4'>
+                                        <div className=' bg-white rounded-lg p-5 space-y-4 transition duration-500 hover:scale-105 hover:border-gray-500'>
                                                   <p className='flex justify-end  '><span className='bg-[#6130f7] text-white p-1 rounded-full'>02</span></p>
                                                  
                                                   <div className='flex justify-center'>
@@ -38,7 +38,7 @@ const GetStarted = () => {
                                         
                                                  
                                         </div>
-                                        <div className=' bg-white rounded-lg p-5 space-y-4'>
+                                        <div className=' bg-white rounded-lg p-5 space-y-4 transition duration-500 hover:scale-105 hover:border-gray-500'>
                                                   <p className='flex justify-end  '><span className='bg-[#6130f7] text-white p-1 rounded-full'>03</span></p>
                                                  
                                                   <div className='flex justify-center'>

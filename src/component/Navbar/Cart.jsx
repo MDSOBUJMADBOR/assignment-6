@@ -1,5 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import { ShoppingCart } from 'lucide-react';
 
 const Cart = ({carts,setCarts}) => {
 const totalPrice = carts.reduce((sum,item) => sum + item.price ,0)
@@ -22,12 +23,17 @@ toast.success("Item deleted!")
 
 
 return (
- <div className=" p-6 max-w-6xl mx-auto border border-gray-300 rounded-xl mb-8">
+ <div className="relative p-6 max-w-6xl mx-auto border border-gray-300 rounded-xl mb-8">
       <h1 className="text-2xl font-bold py-4">Your Cart</h1>
 
       {carts.length === 0 ? (
-        <p className="text-center text-2xl font-semibold p-5 bg-gray-100 rounded-xl">Cart is empty</p>
-      ) : (
+<div className='p-5 py-12 bg-gray-100 rounded-xl text-center flex justify-center items-center'>
+<div>
+  <ShoppingCart className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+<p className=" text-2xl font-semibold ">Your Cart is empty</p>
+</div>
+
+</div>      ) : (
         <>
 
 

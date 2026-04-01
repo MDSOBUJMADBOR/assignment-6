@@ -27,7 +27,7 @@ const tagColors = {
   };
 
           return (
-                    <div className='border border-gray-300 rounded-xl p-5 space-y-4 '>
+                    <div className='border border-gray-300 rounded-xl p-5 space-y-4 transition duration-500 hover:scale-105 hover:border-gray-500'>
 
 <div className='flex justify-between items-center '>
           <img className='border border-gray-400 rounded-full p-2' src={model.image} alt="" />
@@ -51,7 +51,7 @@ model.features.map((feature,index) => (
 <div>
           
 </div>
-<button onClick={handleSubsScription} className={`btn text-xl w-full rounded-3xl  text-white ${isBuy ? "bg-emerald-500  " : "bg-linear-to-r from-[#2106f0] to-[#8706ea]"}`}>{isBuy ? "Buy" : "Buy Now"}</button>
+<button onClick={handleSubsScription} className={`btn text-base w-full rounded-3xl  text-white ${isBuy ? "bg-emerald-500  " : "bg-linear-to-r from-[#2106f0] to-[#8706ea]"}`}>{isBuy ? " ✓ Added to Card" : "Buy Now"}</button>
                               
                     </div>
           );
