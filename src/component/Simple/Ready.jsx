@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ready = () => {
           return (
-                    <div className='bg-[#8b1afa] space-y-8 py-20'>
+                    <div className='bg-[#8b1afa] space-y-8 py-20 px-2'>
 <div className='text-center space-y-8'>
 <h2 className='text-4xl font-semibold text-white'>Ready to Transform Your Workflow?</h2>
 <p className='text-[16px] text-gray-300'>Join thousands of professionals who are already using Digitools to work smarter. <br /> Start your free trial today.</p>

@@ -9,6 +9,9 @@ const Navbar = ({carts}) => {
  <div className="navbar-start">
         <div className="flex items-center gap-1 font-bold text-3xl bg-linear-to-r from-[#2106f0] to-[#8706ea] bg-clip-text text-transparent">
           DigiTools
+
+
+
         </div>
       </div>
       <div className="navbar-center  flex">

@@ -19,10 +19,10 @@ const Simple = () => {
 
 <br />
 
-     <div className='my-0 max-w-5xl mx-auto grid grid-cols-3 gap-2 '>
+     <div className='my-0 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-5 md:px-0 '>
 
 
-<div className="card w-80 bg-[#f9fafc] shadow-sm">
+<div className="card  bg-[#f9fafc] shadow-sm">
   <div className="card-body">
     
     <div className="space-y-2">
@@ -61,7 +61,7 @@ const Simple = () => {
 
 
 
-<div className="card w-80  shadow-sm bg-linear-to-r from-[#2106f0] to-[#8706ea] text-white">
+<div className="card   shadow-sm bg-linear-to-r from-[#2106f0] to-[#8706ea] text-white">
   <div className="card-body">
     
     <div className="space-y-2">
@@ -106,7 +106,7 @@ const Simple = () => {
 </div>
 
 
-<div className="card w-80 bg-[#f9fafc] shadow-sm">
+<div className="card  bg-[#f9fafc] shadow-sm">
   <div className="card-body">
     
     <div className="space-y-2">

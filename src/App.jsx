@@ -12,6 +12,7 @@ import Simple from './component/Simple/Simple'
 import Footer from './component/Simple/Footer'
 import { ToastContainer } from 'react-toastify'
 import Ready from './component/Simple/Ready'
+import NavBar2 from './component/NavBar2/NavBar2'
 
 
 const getModels = async () => {
@@ -27,7 +28,8 @@ const [carts, setCarts] = useState([])
 
   return (
     <>
-    <Navbar carts={carts}></Navbar>
+    <NavBar2 carts={carts}></NavBar2>
+    {/* <Navbar carts={carts}></Navbar> */}
    <BanNer></BanNer>
    <Active></Active>
    <Premium></Premium>

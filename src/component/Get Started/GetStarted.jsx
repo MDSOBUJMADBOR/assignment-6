@@ -13,7 +13,7 @@ const GetStarted = () => {
                               </div> 
 
 
-                         <div className='grid grid-cols-3 gap-5 max-w-6xl mx-auto'>
+                         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto px-5 md:px-0'>
                                       
                                         <div className=' bg-white rounded-lg p-5 space-y-4 transition duration-500 hover:scale-105 hover:border-gray-500'>
                                                   <p className='flex justify-end  '><span className='bg-[#6130f7] text-white p-1 rounded-full'>01</span></p>

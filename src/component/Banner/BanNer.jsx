@@ -9,9 +9,9 @@ const BanNer = () => {
 
                          
 <div className="max-w-6xl mx-auto my-22">
-      <div className="flex flex-wrap justify-center items-center gap-10">
+      <div className="grid grid-cols-1  md:grid-cols-2 justify-center items-center gap-10">
               {/* Left Content */}
-                                        <div className='space-y-4'>
+                                        <div className='space-y-4 text-center md:text-left'>
                                                 
                                         <div className="inline-flex items-center gap-2 bg-[#e1e7ff]  text-[#6130f7] text-sm        font-medium px-5 py-2 rounded-full">
                                         <img src={GradientImage} alt="" />
@@ -31,7 +31,7 @@ const BanNer = () => {
                                         </p>
 
 
-                                        <div className="flex flex-wrap gap-4 pt-4 ">
+                                        <div className="flex flex-wrap justify-center md:justify-start  gap-4 pt-4 ">
                                                 <button className="btn bg-linear-to-r from-[#2106f0] to-[#8706ea]  px-8 py-7 rounded-full font-semibold text-lg  flex items-center gap-3  text-white">
                                                     Explore Products
                                                    <ArrowRight />
@@ -52,7 +52,7 @@ const BanNer = () => {
            
 
                        {/* Right Image */}
-                    <div className=" flex justify-center lg:justify-end  ">
+                    <div className="px-4 md:px-0">
                               
                               <img src={BanNerImage} alt="" className='shadow-xl' />
                               
