@@ -3,6 +3,18 @@ import BanNerImage from '../../assets/banner.png'
 import GradientImage from '../../assets/Group.png'
 import PlayImage from '../../assets/Play.png'
 import { ArrowRight } from 'lucide-react';
+import { toast } from 'react-toastify';
+
+
+const ExploreProducts = () => {
+toast("Explore Products")
+}
+
+const WatchDemo = () => {
+toast("Watch Demo!")
+}
+
+
 
 const BanNer = () => {
           return (
@@ -32,13 +44,13 @@ const BanNer = () => {
 
 
                                         <div className="flex flex-wrap justify-center md:justify-start  gap-4 pt-4 ">
-                                                <button className="btn bg-linear-to-r from-[#2106f0] to-[#8706ea]  px-8 py-7 rounded-full font-semibold text-lg  flex items-center gap-3  text-white">
+                                                <button onClick={ExploreProducts} className="btn bg-linear-to-r from-[#2106f0] to-[#8706ea]  px-8 py-7 rounded-full font-semibold text-lg  flex items-center gap-3  text-white">
                                                     Explore Products
                                                    <ArrowRight />
                                         
                                                 </button>
 
-                                                 <button className="btn border-2 border-purple-500 bg-transparent hover:bg-linear-to-r hover:from-purple-500 to-[#8706ea] transition duration-1200  px-8 py-7 rounded-full font-semibold   flex items-center gap-3  hover:text-white ">
+                                                 <button onClick={WatchDemo} className="btn border-2 border-purple-500 bg-transparent hover:bg-linear-to-r hover:from-purple-500 to-[#8706ea] transition duration-1200  px-8 py-7 rounded-full font-semibold   flex items-center gap-3  hover:text-white ">
                                                   <img src={PlayImage} alt="" />
                                                   Watch Demo
                                         

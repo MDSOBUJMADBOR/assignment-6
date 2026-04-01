@@ -3,6 +3,7 @@
 import { Menu, ShoppingCart, X } from 'lucide-react';
 import Link from './Link';
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 
 const navLinks = [
@@ -12,6 +13,12 @@ const navLinks = [
   { id: 4, name: "Testimonials",  path: "/" },
   { id: 5, name: "FAQ",  path: "/" },
 ];
+
+const GetStarted = () =>{
+  toast("Get Started !")
+}
+
+
 
 const Navbar = ({carts}) => {
 const [open,setOpen] = useState(false)
@@ -68,7 +75,7 @@ const links =navLinks.map(route => <Link key={route.id} route={route}></Link>)
 </div>
 
 <button>Login</button>
-<a className="btn bg-linear-to-r from-indigo-500 to-purple-500   rounded-full text-white">Get Started</a>
+<a onClick={GetStarted} className="btn bg-linear-to-r from-indigo-500 to-purple-500   rounded-full text-white ">Get Started</a>
 
 </div>
                     </nav>
