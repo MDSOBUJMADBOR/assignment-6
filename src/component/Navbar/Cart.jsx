@@ -8,14 +8,14 @@ const totalPrice = carts.reduce((sum,item) => sum + item.price ,0)
 
 const handlePayment = () => {
 setCarts([]);
-toast.success("Payement successful!")
+toast.success("Your All Card Delete!")
 };
 
 const handleDelete = (item) => {
 console.log(item);
 const filteredArray = carts.filter((c) => c.id !== item.id);
 setCarts(filteredArray);
-toast.success("Item deleted!")
+toast.success("Your Card Delete!")
 }
 
 

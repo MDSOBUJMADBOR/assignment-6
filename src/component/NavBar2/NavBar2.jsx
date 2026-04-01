@@ -23,12 +23,12 @@ const links =navLinks.map(route => <Link key={route.id} route={route}></Link>)
 
           return (
           
-         <div className='border-b border-gray-200 sticky top-0 bg-white z-50 shadow-xl/3 py-[14px]'>
+         <div className='border-b border-gray-200 sticky top-0 bg-white z-50 shadow-xl/3 py-3.5'>
 
- <nav className='max-w-6xl mx-auto flex justify-between mt-3  '>
+ <nav className='max-w-6xl mx-auto flex justify-between mt-3 '>
          <span className='flex' onClick={() => setOpen(!open)}>
           {open ? <X className='md:hidden'></X> : <Menu className='md:hidden'></Menu>}
-           <ul className={`md:hidden absolute text-black duration-1000 ${open ? "top-10" : "-top-40"} bg-amber-200`}>
+           <ul className={`md:hidden absolute text-black duration-1000 ${open ? "left-3 top-15" : "-left-40 top-15"} bg-amber-200 `}>
                 {
           links
                 }    

@@ -15,7 +15,7 @@ const Simple = () => {
 
 <div className='relative max-w-6xl mx-auto'>
 
-<span className="left-130 top-2 font-bold bg-amber-100 text-xs border-none  badge badge-xs badge-warning p-4 absolute z-5 rounded-full">Most Popular</span>
+<span className="hidden md:block left-130 top-2 font-bold bg-amber-100 text-xs border-none   p-2 absolute z-5 rounded-full">Most Popular</span>
 
 <br />
 

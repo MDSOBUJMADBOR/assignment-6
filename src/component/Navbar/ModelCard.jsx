@@ -11,13 +11,13 @@ setIsBuy(true);
 const isFound = carts.find((item) => item.id === model.id);
 
 if(isFound) {
-  toast.error("Item already in cart!")
+  toast.error("This item is already in your card")
   return;
 }
 
 setCarts([...carts, model]);
   
-toast.success("Item added to cart!");
+toast.success("Added to Your Card Successfully");
 }
 //  console.log(model);
 const tagColors = {
